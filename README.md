@@ -1,5 +1,7 @@
 # Klient-Serwer Request
 Program przedstawia pracę klienta oraz serwera. Kilka klientów podłączane do serwera oraz korzystają ze wspólnej książki telefonicznej.
+# Idea
+Napisanie serwera podobnego do pracy Microsoft SQL Server, który obsługuje przychodzące komendy i wykonuje te komendy na serwerze i wysyła klientowi wiadomości zwrotne.
 # Serwer
 Serwer jest wielowątkowym czyli każdy nowe przychodzące połączenie będzie obsługiwane w nowym wątku co pozwala równolegle wielu użytkownikom korzystać ze wspólnej książki telefonicznej. Książkę telefoniczną przedstawia kolekcja **ConcurrentHashMap<K,V>** która jest biezpieczna wątkowo.
 # Komendy akceptujące przez Serwer
@@ -12,3 +14,4 @@ Serwer jest wielowątkowym czyli każdy nowe przychodzące połączenie będzie 
  - ``LIST`` — *zwraca listę imion zawartych w książce*
  - ``CLOSE`` — *zamyka nasłuchiwanie przychodzących połączeń*
  - ``BYE`` — *zakońcenie pracy serwera oraz klienta*
+# Screenshots
