@@ -15,3 +15,4 @@ Serwer jest wielowątkowym czyli każdy nowe przychodzące połączenie będzie 
  - ``CLOSE`` — *zamyka nasłuchiwanie przychodzących połączeń*
  - ``BYE`` — *zakońcenie pracy serwera oraz klienta*
 # Screenshots
+![Screenshot_1](https://user-images.githubusercontent.com/19534189/105908886-11968400-6027-11eb-92be-4de48ea2f4d7.png)
