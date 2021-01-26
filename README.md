@@ -1,2 +1,14 @@
-# Client_RequestServer
+# Klient-Serwer Request
 Program przedstawia pracę klienta oraz serwera. Kilka klientów podłączane do serwera oraz korzystają ze wspólnej książki telefonicznej.
+# Serwer
+Serwer jest wielowątkowym czyli każdy nowe przychodzące połączenie będzie obsługiwane w nowym wątku co pozwala równolegle wielu użytkownikom korzystać ze wspólnej książki telefonicznej. Książkę telefoniczną przedstawia kolekcja **ConcurrentHashMap<K,V>** która jest biezpieczna wątkowo.
+# Komendy akceptujące przez Serwer
+ - ``LOAD filename`` — *wczytanie książki telefonicznej z pliku binranego*
+ - ``SAVE filename`` — *zapisywanie książki telefonicznej do pliku binranego*
+ - ``GET username`` — *zwraca numer danego użytkownika*
+ - ``PUT username number`` — *dodaje do książki użytkownika z numerem*
+ - ``REPLACE username number`` — *zamienia numer istniejącego użytkownika*
+ - ``DELETE username`` — *usuwa z książki użytkownika*
+ - ``LIST`` — *zwraca listę imion zawartych w książce*
+ - ``CLOSE`` — *zamyka nasłuchiwanie przychodzących połączeń*
+ - ``BYE`` — *zakońcenie pracy serwera oraz klienta*
